@@ -1,0 +1,8 @@
+<step title="Incoming Request" date="2020-05-27T18:46:53.447" instance="d26972" url="/api/scm" method="DELETE" type="request" pid="4920,2,8" Connection="Keep-Alive" Authorization="Bas..." Host="ezt-dummy-app.scm.azurewebsites.net" User-Agent="Azure-WebSites-Controller/87.1.7.202" x-ms-request-id="c10e48dc-101a-4817-8956-067f07a3402d" X-WAWS-Unencoded-URL="/api/scm" CLIENT-IP="40.112.243.8:22784" X-ARR-LOG-ID="c10e48dc-101a-4817-8956-067f07a3402d" X-SITE-DEPLOYMENT-ID="EZT-Dummy-APP" WAS-DEFAULT-HOSTNAME="ezt-dummy-app.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" >
+  <step title="Deleting repository" date="2020-05-27T18:46:53.524" /><!-- duration: 31ms -->
+  <step title="Delete auto swap lock file" date="2020-05-27T18:46:53.555" /><!-- duration: 16ms -->
+  <step title="Deleting ssh key" date="2020-05-27T18:46:53.571" /><!-- duration: 35ms -->
+  <step title="Updating initial deployment manifest" date="2020-05-27T18:46:53.606" /><!-- duration: 16ms -->
+  <step title="Deleting deployment cache" date="2020-05-27T18:46:53.638" /><!-- duration: 52ms -->
+  <step title="Outgoing response" date="2020-05-27T18:46:53.705" type="response" statusCode="204" statusText="No Content" Server="Microsoft-IIS/10.0" x-ms-request-id="c10e48dc-101a-4817-8956-067f07a3402d" Cache-Control="private" X-AspNet-Version="4.0.30319" /><!-- duration: 0ms -->
+</step><!-- duration: 259ms -->

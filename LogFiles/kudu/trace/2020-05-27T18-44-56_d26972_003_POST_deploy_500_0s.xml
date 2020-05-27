@@ -1,0 +1,16 @@
+<step title="Incoming Request" date="2020-05-27T18:44:56.066" instance="d26972" url="/deploy?scmType=ExternalGit&amp;isAsync=true" method="POST" type="request" pid="4292,2,6" Connection="Keep-Alive" Content-Length="51" Authorization="Bas..." Expect="100-continue" Host="ezt-dummy-app.scm.azurewebsites.net" User-Agent="Azure-WebSites-Controller/87.1.7.202" x-ms-request-id="fb0d7f5d-08fa-4d96-b088-8cc268f08a55" X-WAWS-Unencoded-URL="/deploy?scmType=ExternalGit&amp;isAsync=true" CLIENT-IP="40.112.243.8:1800" X-ARR-LOG-ID="fb0d7f5d-08fa-4d96-b088-8cc268f08a55" X-SITE-DEPLOYMENT-ID="EZT-Dummy-APP" WAS-DEFAULT-HOSTNAME="ezt-dummy-app.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" >
+  <step title="FetchHandler" date="2020-05-27T18:44:56.184" /><!-- duration: 95ms -->
+  <step title="Error occurred" date="2020-05-27T18:44:56.293" type="error" text="Repository url &apos;testWebsite&apos; is invalid." stackTrace="   at Kudu.Services.ServiceHookHandlers.ServiceHookHandlerBase.GetDeployerFromUrl(String url) in C:\Kudu Files\Private\src\master\Kudu.Services\ServiceHookHandlers\ServiceHookHandlerBase.cs:line 53
+   at Kudu.Services.ServiceHookHandlers.GenericHandler.TryParseDeploymentInfo(HttpRequestBase request, JObject payload, String targetBranch, DeploymentInfoBase&amp; deploymentInfo) in C:\Kudu Files\Private\src\master\Kudu.Services\ServiceHookHandlers\GenericHandler.cs:line 54
+   at Kudu.Services.FetchHandler.GetRepositoryInfo(HttpRequestBase request, JObject payload, String targetBranch, DeploymentInfoBase&amp; info) in C:\Kudu Files\Private\src\master\Kudu.Services\ServiceHookHandlers\FetchHandler.cs:line 156
+   at Kudu.Services.FetchHandler.&lt;ProcessRequestAsync&gt;d__5.MoveNext() in C:\Kudu Files\Private\src\master\Kudu.Services\ServiceHookHandlers\FetchHandler.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.HttpTaskAsyncHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" /><!-- duration: 0ms -->
+  <step title="Outgoing response" date="2020-05-27T18:44:56.356" type="response" statusCode="500" statusText="Internal Server Error" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="text/html; charset=utf-8" /><!-- duration: 0ms -->
+</step><!-- duration: 306ms -->
